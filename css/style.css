@@ -1,0 +1,31 @@
+body{
+  background-size: cover;
+  background-image:url(../img/bg4night4.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+#content-wrapper{
+  width:100%;
+  max-width:750px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+#nav-bar-wrapper{
+  width:100%;
+}
+#opaque-wrapper{
+  float:left;
+  width:100%;
+  background-color: rgba(82,140,165,.7);
+}
+.content-images{
+  width:100%;
+}
+.heading{
+  color:white;
+}
+.fifty-percent{
+  float:left;
+  width:50%;
+}
