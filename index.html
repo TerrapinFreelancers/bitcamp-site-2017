@@ -7,40 +7,44 @@
       crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <link rel = "stylesheet" type = "text/css" href = "css/style.css"/>
+    <script language="javascript" type="text/javascript" src="js/p5.js"></script>
+    <script language="javascript" type="text/javascript" src="js/p5.dom.js"></script>
+    <script language="javascript" type="text/javascript" src="js/scrollBGDemo.js"></script>
   </header>
   <body>
+    <div id="canvas-holder"></div>
     <div id="content-wrapper">
-      <img src="img/bitcamp@2x.png"/>
-      <h1>bitcamp</h1>
+      <img id="logo" src="img/bitcamp-logo-badge.png"/>
+      <!-- <h1>bitcamp</h1> -->
       <div id="nav-bar-wrapper">
         <a class="button" href="">ABOUT</a>
         <a class="button" href="">FAQ</a>
         <a class="button" href="">REGISTER</a>
       </div>
       <div id="opaque-wrapper">
-        <p>Bitcamp is a place for exploration.
+        <p class="intro-text">Bitcamp is a place for exploration.
           You will have 36 hours to delve into your curiosities,
           learn something new, and make something awesome.With world-class
           mentors and hundreds of fellow campers, you're in for an amazing
            time. If you're ready for an adventure, see you by the fire!</p>
         <form>
-          <input type="text" placeholder="example@email.com"/>
-          <input type="submit" value="GET UPDATES"/>
+          <input type="text" id="input-email" placeholder="example@email.com"/>
+          <input type="submit" class="button" value="GET UPDATES"/>
         </form>
       </div>
       <img class="content-images" src="img/fillerImage1.jpg"/>
       <div id="opaque-wrapper">
-        <h3 class="heading"> FAQ </h3>
+        <h2 class="heading"> FAQ </h2>
         <div class="fifty-percent">
           <h3 class="heading"> What's Bitcamp? </h3>
-          <p>
+          <p class="body-text">
             Bitcamp is a place for exploration. We're a hackathon that values
             participant experience and mentorship over competitiveness and points.
             Come to have fun with your friends, learn something new, eat s'mores
             , and have a generally awesome time. We have all sorts of crazy
             activities planned for you...you'll have to come to find out the rest!</p>
           <h3 class="heading"> What's a hackathon? </h3>
-          <p>
+          <p class="body-text">
             A hackathon is a creative coding marathon. Students are encouraged
             to come with an idea, form teams, and then build out that
             idea into a product in 36 hours. For Bitcamp, we want you to take
@@ -49,20 +53,20 @@
             learn some new skills.
           </p>
           <h3 class="heading"> Where's Bitcamp? </h3>
-          <p>
+          <p class="body-text">
             Bitcamp 2016 will take place at the Xfinity center on the
             University of Maryland Campus
 
             Directions
           </p>
           <h3 class="heading"> Travel </h3>
-          <p>
+          <p class="body-text">
             We'll have buses covering travel from several schools and areas. We
             will not be reimbursing any individual travel expenses this year.
             Please contact travel@bitca.mp for more information.
           </p>
           <h3 class="heading"> Guidelines </h3>
-          <p>
+          <p class="body-text">
             Don't bring any firearms, knives, weapons, drugs, or alcohol.
             Don't use an old project. Start something new instead!
             Please read our Code of Conduct. Organizers will enforce this
@@ -73,51 +77,63 @@
         </div>
         <div class="fifty-percent">
           <h3 class="heading"> Timing </h3>
-          <p>People will arrive between 6pm and 8pm on Friday, April8, 2016. Dinner
+          <p class="body-text">
+            People will arrive between 6pm and 8pm on Friday, April8, 2016. Dinner
             is served at 6:30 PM. Our Sponsor Fair is at 8:00 PM, where you can
             spend time meeting and listening to sponsor talks. Hacking will start at
             10PM on Friday and go until 10am on Sunday, April 10, 2016. Closing
             session will end by 3pm on Sunday.
           </p>
           <h3 class="heading"> Packing List </h3>
-          <p>
+          <p class="body-text">
             Bring yourself, a photo ID, your signed waiver (if applicable),
             clothes, toiletries, a sleeping bag/blanket, your hacker setup
             and maybe an idea or two.
           </p>
           <h3 class="heading"> Teams </h3>
-          <p>
+          <p class="body-text">
             Projects are submitted by teams to DevPost. You don't need
             to finalized your team until project submissions are due during the event.
             Teams are limited to four people. You may have a one-person team.
           </p>
           <h3 class="heading"> Experience + Ideas </h3>
-          <p>
+          <p class="body-text">
             Don't be afraid if you don't think you have enough experience, a team
             or an idea. A hackathon is meant for learning. We are going to have experienced
             mentors to help your team with a range of topics, and workshops on all
             kinds of skills.
           </p>
           <h3 class="heading"> Can I volunteer/mentor? </h3>
-          <p>
+          <p class="body-text">
             We would love your help in guiding our hackers!
             Sign up to be a Volunteer
             Sigh up to be a Mentor
           </p>
           <h3 class="heading"> Who can apply? </h3>
-          <p>
+          <p class="body-text">
             Anyone over the age of 18!
           </p>
           <h3 class="heading"> Other questions? </h3>
-          <p>
+          <p class="body-text">
             Please contact us at hello@bitca.mp
           </p>
         </div>
       </div>
       <img class="content-images" src="img/fillerImage2.jpg"/>
       <div id="opaque-wrapper">
-        <h3 class="heading"> Sponsors </h3>
+        <h2 class="heading"> Sponsors </h2>
       </div>
     </div>
   </body>
+  <script>
+  // window.onscroll = function() {
+  //   if (window.pageYOffset > 0) {
+  // 	var opac = window.pageYOffset / 1000;
+  //   console.log(window.pageYOffset);
+  // 	document.body.style.backgroundImage = "linear-gradient(rgba(255, 255, 255, " +
+  //   opac + "),rgba(255, 255, 255, " + opac
+  //   + ")),url(img/bg4night4.png),url(img/bg1dawn4.png)";
+  // 	}
+  // }
+  </script>
 </html>

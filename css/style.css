@@ -1,12 +1,35 @@
-body{
-  background-size: cover;
-  background-image:url(../img/bg4night4.png);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+@font-face {
+    font-family: Avenir Light;
+    src: url("../fonts/Avenir/AvenirLTStd-light.otf") format("opentype");
+}
+@font-face {
+    font-family: Aleo Light;
+    src: url("../fonts/Aleo/Aleo-Light.otf") format("opentype");
+}
+@font-face {
+    font-family: Aleo;
+    src: url("../fonts/Aleo/Aleo-Regular.otf") format("opentype");
+}
+h2{
+  padding:0px 0px 0px 40px;
+  font-family: Avenir Light;
+  text-align: left;
+  font-size: 27;
+}
+h3{
+  padding:0px 0px 0px 40px;
+  text-align: left;
+  font-family: Avenir Light;
+  font-size: 21;
+}
+#logo{
+  max-width: 300;
+  height:auto;
+  width:100%;
 }
 #content-wrapper{
   width:100%;
-  max-width:750px;
+  max-width:850px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -17,7 +40,59 @@ body{
 #opaque-wrapper{
   float:left;
   width:100%;
-  background-color: rgba(82,140,165,.7);
+  background-color: rgba(22,38,41,.79);
+}
+#input-email{
+  width: 400px;
+  padding: 12px 12px;
+  box-sizing: border-box;
+  font-family: Aleo Light;
+  font-size: 30;
+  border-color: rgb(241, 97, 60);
+  border-style:solid;
+  border-width:7.5px;
+  outline: none;
+}
+#canvas-holder{
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+.button {
+  font-family: Aleo Light;
+  font-size: 41;
+  text-decoration: none;
+  background-color: rgba(22,38,41,.79);
+  color: #FA9F3A;
+  margin: 75px 10px 75px 10px;
+  padding: 10px 0px 10px 0px;
+  border:none;
+  display: inline-block;
+  width: 225px;
+}
+input.button{
+  font-size:30;
+  padding:20px;
+  width:250px;
+  margin:40px 10px 40px 10px;
+  background-color: rgba(241, 97, 60, .69);
+}
+.body-text{
+  padding:0px 20px 0px 40px;
+  line-height:29px;
+  font-family: Avenir Light;
+  text-align: left;
+  font-size: 18;
+  color: #FA9F3A;
+}
+.intro-text{
+  padding:40px 40px 0px 40px;
+  /*line-height:29px;*/
+  font-family: Avenir Light;
+  text-align: left;
+  font-size: 27;
+  color: #fa9f3a;
 }
 .content-images{
   width:100%;
