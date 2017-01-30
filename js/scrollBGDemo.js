@@ -20,19 +20,16 @@ function draw() {
 
   var date = new Date();
   var h = date.getHours();
-  var i = (floor(h/4) + 3)%images.length;
+  var i = (floor(h/4) + 2)%images.length;
   console.log(h);
   console.log(i);
-  var t = (h/4-floor(h/4) + date.getMinutes()/60)/(ceil(h/4)-floor(h/4));
-
-
+  var t = (h/4-floor(h/4)) + (date.getMinutes()/240);
   tint(255, 255, 255, (cos(t * PI) + 1) / 2 * 255);
+
   image(images[i], 0, 0, max(width, height / images[i].height * images[i].width), max(height, width / images[i].width * images[i].height));
 
-  if (i + 1 < images.length) {
-    tint(255, 255, 255, (-cos(t * PI) + 1) / 2 * 255);
-    image(images[i + 1], 0, 0, max(width, height / images[i].height * images[i].width), max(height, width / images[i].width * images[i].height));
-  }
+  tint(255, 255, 255, (-cos(t * PI) + 1) / 2 * 255);
+  image(images[(i + 1)%images.length], 0, 0, max(width, height / images[i].height * images[i].width), max(height, width / images[i].width * images[i].height));
 }
 $(document).ready(function() {
   setTimeout(noLoop, 100);
