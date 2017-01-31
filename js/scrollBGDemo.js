@@ -21,8 +21,8 @@ function draw() {
   var date = new Date();
   var h = date.getHours();
   var i = (floor(h/4) + 2)%images.length;
-  console.log(h);
-  console.log(i);
+  // console.log(h);
+  // console.log(i);
   var t = (h/4-floor(h/4)) + (date.getMinutes()/240);
   tint(255, 255, 255, (cos(t * PI) + 1) / 2 * 255);
 
