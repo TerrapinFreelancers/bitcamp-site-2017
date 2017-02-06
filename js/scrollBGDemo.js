@@ -1,5 +1,6 @@
 var images = [];
 var canvas;
+var timeoutCalled = false;
 
 function windowResized() {
   canvas.size(window.innerWidth, window.innerHeight);
@@ -16,6 +17,10 @@ function setup() {
 }
 
 function draw() {
+  if (timeoutCalled === false){
+    setTimeout(noLoop, 200);
+    timeoutCalled = true;
+  }
   background(0);
 
   var date = new Date();
@@ -31,6 +36,3 @@ function draw() {
   tint(255, 255, 255, (-cos(t * PI) + 1) / 2 * 255);
   image(images[(i + 1)%images.length], 0, 0, max(width, height / images[i].height * images[i].width), max(height, width / images[i].width * images[i].height));
 }
-$(document).ready(function() {
-  setTimeout(noLoop, 100);
-});
