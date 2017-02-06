@@ -28,9 +28,11 @@ body{
 }
 a {
   color: #fa9f3a;
+  text-decoration: none;
 }
 a:hover {
   color: #CBF2FF;
+  text-decoration: none;
 }
 
 #logo{
@@ -133,8 +135,25 @@ input.button{
   margin: 30px 30px;
 }
 
+.social-media-images {
+  width: 6%;
+  margin: 30px 10px;
+}
+
 .heading{
-  color:white;
+  color: white;
+}
+
+.contact {
+  padding-top: 50px;
+  color: white;
+  text-align: center;
+}
+
+.copyright {
+  padding-top: 50px;
+  color: white;
+  font-family: Avenir Light;
 }
 
 .fifty-percent{
@@ -345,6 +364,16 @@ input.button{
   top: 20px;
 }
 
+#contact {
+  width: inherit;
+  text-align: center;
+}
+
+#contact-inside {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
 
 @media only screen and (max-width: 768px){
   #logo{
