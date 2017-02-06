@@ -26,6 +26,13 @@ body{
   margin:0;
   padding: 0;
 }
+a {
+  color: #fa9f3a;
+}
+a:hover {
+  color: #CBF2FF;
+}
+
 #logo{
   max-width: 25rem;
   max-height: 25rem;
@@ -43,7 +50,7 @@ body{
   width:100%;
   margin: 75px 10px 75px 10px;
 }
-#opaque-wrapper{
+.opaque-wrapper{
   float:left;
   width:100%;
   background-color: rgba(22,38,41,.79);
@@ -100,6 +107,11 @@ input.button{
   text-align: left;
   font-size: 27;
   color: #fa9f3a;
+}
+
+.row {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .content-images{
@@ -341,7 +353,7 @@ input.button{
     height: auto;
     width:100%;
   }
-  #opaque-wrapper{
+  .opaque-wrapper{
     margin-top: 50px;
   }
   .menu, .cross, .hamburger, .header{
