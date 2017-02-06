@@ -41,7 +41,7 @@ body{
 }
 #nav-bar-wrapper{
   width:100%;
-  margin: 65px 10px 65px 10px;
+  margin: 75px 10px 75px 10px;
 }
 #opaque-wrapper{
   float:left;
@@ -76,7 +76,7 @@ body{
   padding: 10px 0px 10px 0px;
   border:none;
   display: inline-block;
-  width: 325px;
+  width: 260px;
 }
 input.button{
   font-size:30;
@@ -101,12 +101,30 @@ input.button{
   font-size: 27;
   color: #fa9f3a;
 }
+
 .content-images{
-  width:100%;
+  width: 100%;
 }
+
+.recruiter-images{
+  width: 90%;
+  margin: 50px 10px;
+}
+
+.api-images{
+  width: 60%;
+  margin: 30px 10px;
+}
+
+.starter-images{
+  width: 40%;
+  margin: 30px 30px;
+}
+
 .heading{
   color:white;
 }
+
 .fifty-percent{
   float:left;
   width:50%;
