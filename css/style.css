@@ -27,12 +27,20 @@ body{
   padding: 0;
 }
 a {
-  color: #fa9f3a;
+  color: #FF3F46;
   text-decoration: none;
 }
 a:hover {
   color: #CBF2FF;
   text-decoration: none;
+}
+
+.footer {
+  color: #FFAF3F;
+}
+
+.footer:hover {
+  color: #CBF2FF;
 }
 
 #logo{
@@ -121,7 +129,7 @@ input.button{
 }
 
 .recruiter-images{
-  width: 90%;
+  width: 80%;
   margin: 50px 10px;
 }
 
@@ -382,9 +390,6 @@ input.button{
     height: auto;
     width:100%;
   }
-  .opaque-wrapper{
-    margin-top: 50px;
-  }
   .menu, .cross, .hamburger, .header{
     display: block;
   }
@@ -401,5 +406,9 @@ input.button{
     margin:auto;
     margin-top: 5px;
     margin-bottom: 5px;
+  }
+
+  #mlh-trust-badge {
+    display: none;
   }
 }
