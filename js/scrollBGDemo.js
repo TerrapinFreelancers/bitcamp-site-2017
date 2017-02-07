@@ -10,12 +10,26 @@ function windowResized() {
 function setup() {
   canvas = createCanvas(window.innerWidth, window.innerHeight);
   canvas.parent('canvas-holder');
+  frameRate(10);
   //blendMode(SUBTRACT);
-
   images = [loadImage("img/bg2day4.png"), loadImage("img/bg3dusk4.png"), loadImage("img/bg4night4.png"), loadImage("img/bg4night4.png"), loadImage("img/bg1dawn4.png"), loadImage("img/bg2day4.png")];
   // noLoop();
 }
 
+function draw() {
+  background(0);
+  var t = $(document).scrollTop() / $(document).height();
+  var i = floor(t * images.length);
+  tint(255, 255, 255, (cos((t * (images.length - 1) - i) * PI) + 1) / 2 * 255);
+  console.log(images.length);
+  image(images[i], 0, 0, max(width, height / images[i].height * images[i].width), max(height, width / images[i].width * images[i].height));
+  
+  if (i + 1 < images.length) {
+    tint(255, 255, 255, (-cos((t * (images.length - 1) - i) * PI) + 1) / 2 * 255);
+    image(images[i + 1], 0, 0, max(width, height / images[i].height * images[i].width), max(height, width / images[i].width * images[i].height));
+  }
+}
+/*
 function draw() {
   if (timeoutCalled === false){
     setTimeout(noLoop, 200);
@@ -36,3 +50,4 @@ function draw() {
   tint(255, 255, 255, (-cos(t * PI) + 1) / 2 * 255);
   image(images[(i + 1)%images.length], 0, 0, max(width, height / images[i].height * images[i].width), max(height, width / images[i].width * images[i].height));
 }
+*/
