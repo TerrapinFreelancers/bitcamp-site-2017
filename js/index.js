@@ -29,3 +29,12 @@ $(document).ready(function(){
     }
   });
 });
+
+var backgroundArray = ["#1","#2","#3","#4","#5","#6"];
+
+window.onscroll = function(){
+  var section = $(document).height()/5;
+  var index = Math.floor(document.body.scrollTop/section);
+  var opacity = Math.round((1-((document.body.scrollTop/section) - index))*100)/100;
+  $(backgroundArray[index]).css({'opacity': opacity});
+}
